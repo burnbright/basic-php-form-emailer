@@ -7,15 +7,17 @@ Support for the recapcha field is included.
 
 ## Files
 
- * index.html - contains the html form to submit
- * submitemail.php - receives the form submission, and sends to the designated email address
- * emailtemplate.php - contains the template used for the actual email that is sent
- * recaptchalib.php & FormMailer.php - helper code for getting the above done
+ * `index.html` - contains the html form to submit.
+ * `submitemail.php` - receives the form submission, and sends to the designated email address.
+ * `emailtemplate.php` - contains the template used for the actual email that is sent.
+ * `recaptchalib.php` & `FormMailer.php` - helper code for getting the above done.
 
 ## Setup
 
-Add the following to your form action page, were you replace 'youremail@example.com' with your own email
-address for recieving messages from the website. This same code is available in submitemail.php
+You can rename `index.html` to anything, such as contact.html, or even contact.php.
+
+This is the code found in submitemail.php. Be sure to replace `youremail@example.com`
+with the email address you want emails to be sent to.
 
 ```php
 <?php
