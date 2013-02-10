@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Email Us</title>
+		<style>
+			form .required{
+				color:red;
+				vertical-align:super;
+				font-size:0.5em;
+			}		
+		</style>
+	</head>
+	<body>
+		<h1>Email Us</h1>
+		<form action="submitemail.php" method="post">
+			<p><span class="required">*</span> indicates a required field</p>
+			<div class="field">
+				<label>name<span class="required">*</span>:</label>
+				<input type="text" name="Name"/>
+			</div>
+			<div class="field">
+				<label>email<span class="required">*</span>:</label>
+				<input type="text" name="Email"/>
+			</div>
+			<div class="field">
+				<label>phone:</label>
+				<input type="text" name="Phone"/>
+			</div>
+			<div class="field">
+				<label>message<span class="required">*</span>:</label>
+				<input type="text" name="Message"/>
+			</div>
+			<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LdQz9wSAAAAAKiNYpLDyHzOSov5iDnFXg2LBOaL"></script>
+			<noscript>
+			     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LdQz9wSAAAAAKiNYpLDyHzOSov5iDnFXg2LBOaL" height="300" width="500" frameborder="0"></iframe><br>
+			     <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+			     <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+			</noscript>
+			<input type="submit"/>
+		</form>
+	</body>
+</html>
